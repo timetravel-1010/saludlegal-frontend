@@ -1,0 +1,44 @@
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d6ecf4;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+p-button {
+    margin-top: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+.container {
+  margin: 40px;
+  font-family: 'Barlow', sans-serif;
+  /* Fuente */
+  font-weight: bold;
+  /* Estilo de fuente */
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  margin-top: 0px;
+  padding-top: 0;
+}

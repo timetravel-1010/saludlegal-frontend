@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+.container {
+  margin: 40px;
+  font-family: 'Barlow', sans-serif;
+  /* Fuente */
+  font-weight: bold;
+  /* Estilo de fuente */
+}
+
+.container h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.container p {
+  font-size: 18px;
+  /* Tamaño de fuente */
+  font-weight: medium;
+}
+
+.data-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Barlow', sans-serif;
+  /* Fuente */
+  margin-top: 20px;
+  width: 100%;
+}
+
+.date-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.doc-item {
+  margin-left: 70px;
+}
+
+.doc-item label {
+  margin-bottom: 10px;
+  
+}
+
+.date-item label {
+  font-weight: normal;
+  /* Estilo de fuente */
+  font-size: 18px;
+  /* Tamaño de fuente */
+  color: black;
+  /* Color del texto */
+}
+
+.date-item p-calendar {
+  margin-top: 10px;
+  /* Espacio en la parte superior del calendario */
+}
+
+
+.pbutton {
+  margin-top: 32px;
+}
+
+
+.container .table-container {
+  margin-top: 30px;
+}
+
+body {
+  display: flex;
+}
+
+p-table ng-template tr td {
+  text-align: center;
+}
+
+

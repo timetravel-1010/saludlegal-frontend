@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+.container {
+  margin: 40px;
+  font-family: 'Barlow', sans-serif;
+  /* Fuente */
+  font-weight: bold;
+  /* Estilo de fuente */
+}
+
+.container h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.container p {
+  font-size: 18px;
+  /* Tamaño de fuente */
+  font-weight: medium;
+}
+
+.calendar-div {
+  margin-top: 10px;
+}
+
+.data-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Barlow', sans-serif;
+  flex-direction: column;
+  /* Fuente */
+  margin-top: 40px;
+  width: 70%;
+  margin-left: 30px;
+}
+
+.doc-item {
+  display: flex;
+  margin-top: 40px;
+}
+
+.doc-item label {
+  margin-right: 10px;
+}
+
+.med-record-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.pbutton {
+  margin-top: 32px;
+}
+
+
+.container .table-container {
+  margin-top: 30px;
+}
+
+body {
+    display: flex;
+}
+
+/* app-navbar {
+    position: sticky;
+    top: 0;
+} */
+
+
+.accordionTab {
+  margin: 10px;
+}
+
+textarea {
+  width: 99%;
+}
+
+.div-pbutton p-button {
+  margin-top: 10px;
+  background-color: black;
+}

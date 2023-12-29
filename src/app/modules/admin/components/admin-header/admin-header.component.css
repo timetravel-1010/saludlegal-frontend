@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+header {
+    background-color: #008c44; /* Color de fondo */
+    font-family: 'Barlow', sans-serif; /* Fuente */
+    display: flex; /* Para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Para separar los elementos */
+    align-items: center; /* Para alinear los elementos verticalmente */
+    padding: 8px; /* Espacio alrededor del encabezado */
+    font-size: 22px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.techcamp-logo {
+    height: 3rem;
+    vertical-align: middle;
+    margin: 0.5rem;
+}
+  
+header a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Para quitar el subrayado de los enlaces */
+}
+
+  
+header nav ul {
+    list-style-type: none; /* Para quitar los marcadores de lista */
+    display: flex; /* Para alinear los elementos horizontalmente */
+}
+  
+header nav ul li {
+    margin-left: 20px; /* Espacio entre los elementos de la lista */
+    margin-right: 90px;
+}

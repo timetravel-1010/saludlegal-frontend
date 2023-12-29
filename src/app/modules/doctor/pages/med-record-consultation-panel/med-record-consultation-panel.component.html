@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>Consultar Historias Clínicas</h1>
+
+    <p>
+        A continuación, consulte y descargue los archivos de historias clínicas de sus pacientes
+    </p>
+
+    <div class="data-container">
+        <div class="date-item">
+            <label>Fecha Inicio</label>
+            <p-calendar [(ngModel)]="startDate" [showIcon]="true"></p-calendar>
+        </div>
+        <div class="date-item">
+            <label>Fecha Fin</label>
+            <p-calendar [(ngModel)]="endDate" [showIcon]="true"></p-calendar>
+        </div>
+        <div class="date-item doc-item">
+            <label>Documento de Identidad</label>
+            <p-inputNumber [(ngModel)]="patientCC" mode="decimal" inputId="withoutgrouping"
+                [useGrouping]="false"></p-inputNumber>
+        </div>
+        <p-button class="pbutton" label="Consultar" (onClick)="getPatientMedicalRecords()"></p-button>
+    </div>
+
+    <div class="table-container">
+        <p-table [value]="medicalRecords" [tableStyle]="{ 'min-width': '50rem' }" [paginator]="true" [rows]="10">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Id</th>
+                    <th>Fecha de Creación</th>
+                    <th>Paciente</th>
+                    <th>Profesional de la Salud</th>
+                    <th>Motivo de Consulta</th>
+                    <th>Ver Detalles</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-medRecord>
+                <tr>
+                    <td>{{medRecord.medicalRecordID}}</td>
+                    <td>{{medRecord.creationDate}}</td>
+                    <td>{{medRecord.patientName}}</td>
+                    <td>{{medRecord.healthcareProfessionalName}}</td>
+                    <td>{{medRecord.consultationReason}}</td>
+                    <td><button>Ver Detalles</button></td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

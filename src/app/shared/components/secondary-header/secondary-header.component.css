@@ -1,0 +1,52 @@
+header {
+  background-color: #E4DDD9;
+  /* Color de fondo */
+  display: flex;
+  /* Para alinear los elementos horizontalmente */
+  justify-content: space-between;
+  /* Para separar los elementos */
+  padding: 0.6rem;
+  /* Espacio alrededor del encabezado */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  color: #504741;
+  /* Color del texto */
+  font-family: 'Barlow', sans-serif;
+  /* Fuente */
+  font-weight: bold;
+  /* Estilo de fuente */
+  font-size: 24px;
+  /* Tamaño de fuente */
+  margin-right: 10rem;
+  /* Espacio a la derecha */
+  margin-left: 10rem;
+}
+
+.header-message {
+  color: black;
+  /* Color del texto */
+  font-family: 'Barlow', sans-serif;
+  /* Fuente */
+  font-weight: bold;
+  /* Estilo de fuente */
+  font-size: 20px;
+  /* Tamaño de fuente */
+}
+
+.header-button {
+  font-family: 'Barlow', sans-serif;
+  /* Fuente */
+  font-weight: bold;
+  /* Estilo de fuente */
+  font-size: 20px;
+  /* Tamaño de fuente */
+  text-decoration: none;
+  color: black;
+  margin-left: 41.5rem;
+}

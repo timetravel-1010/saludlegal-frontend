@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+.container {
+    margin: 100% auto;
+    font-family: 'Barlow', sans-serif;
+    /* Fuente */
+    font-weight: bold;
+    /* Estilo de fuente */
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    width: 50%;
+}
+
+.container h1 {
+    margin-bottom: 40px;
+    font-size: 24px;
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.container p {
+    font-size: 18px;
+    /* Tamaño de fuente */
+    font-weight: medium;
+    text-align: left;
+    margin-bottom: 50px;
+}

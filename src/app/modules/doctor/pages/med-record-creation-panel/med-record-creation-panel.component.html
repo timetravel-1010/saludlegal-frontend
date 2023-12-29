@@ -1,0 +1,74 @@
+<div class="container">
+    <h1>Crear Nueva Historia Clínica</h1>
+
+    <p>
+        A continuación, consulte y descargue los archivos de historias clínicas de sus pacientes
+    </p>
+
+    <div>
+        <div class="doc-item data-item">
+            <label>Documento del paciente:</label>
+            <p-inputNumber [(ngModel)]="patientCC" mode="decimal" inputId="withoutgrouping"
+                [useGrouping]="false"></p-inputNumber>
+        </div>
+
+        <p-scrollPanel [style]="{ width: '150%', height: '400px' }">
+            <p-accordion [multiple]="true">
+
+                <p-accordionTab header="Motivo de Consulta" class="accordionTab">
+                    <div class="consultation-reason-container data-item med-record-field">
+                        <textarea rows="5" cols="30" pInputTextarea [(ngModel)]="consultationReason"></textarea>
+                    </div>
+                </p-accordionTab>
+
+                <p-accordionTab header="Sintomatología" class="accordionTab">
+                    <div class="consultation-reason-container data-item med-record-field">
+                        <textarea rows="5" cols="30" pInputTextarea [(ngModel)]="symptomatology"></textarea>
+                    </div>
+                </p-accordionTab>
+
+                <p-accordionTab header="Lesiones" class="accordionTab">
+                    <div class="consultation-reason-container data-item med-record-field">
+                        <textarea rows="5" cols="30" pInputTextarea [(ngModel)]="injuries"></textarea>
+                    </div>
+                </p-accordionTab>
+
+                <p-accordionTab header="Signos Vitales" class="accordionTab">
+                    <div class="consultation-reason-container data-item med-record-field">
+                        <textarea rows="5" cols="30" pInputTextarea [(ngModel)]="vitalSigns"></textarea>
+                    </div>
+                </p-accordionTab>
+
+                <p-accordionTab header="Diagnóstico" class="accordionTab">
+                    <div class="consultation-reason-container data-item med-record-field">
+                        <textarea rows="5" cols="30" pInputTextarea [(ngModel)]="diagnosis"></textarea>
+                    </div>
+                </p-accordionTab>
+
+                <p-accordionTab header="Antecedentes Médicos" class="accordionTab">
+                    <div class="consultation-reason-container data-item med-record-field">
+                        <textarea rows="5" cols="30" pInputTextarea [(ngModel)]="medicalBackground"></textarea>
+                    </div>
+                </p-accordionTab>
+
+                <p-accordionTab header="Interconsultas" class="accordionTab">
+                    <div class="consultation-reason-container data-item med-record-field">
+                        <textarea rows="5" cols="30" pInputTextarea [(ngModel)]="interconsultations"></textarea>
+                    </div>
+                </p-accordionTab>
+
+                <p-accordionTab header="Epicrisis" class="accordionTab">
+                    <div class="consultation-reason-container data-item med-record-field">
+                        <textarea rows="5" cols="30" pInputTextarea [(ngModel)]="epicrisis"></textarea>
+                    </div>
+                </p-accordionTab>
+
+            </p-accordion>
+        </p-scrollPanel>
+    </div>
+
+    <div class="div-pbutton">
+        <p-button (onClick)="createMedicalRecord()" label="Registrar Historia Clínica"></p-button>
+    </div>
+
+</div>

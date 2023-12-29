@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+footer {
+    margin-top: auto;
+    background-color: #D9D9D9;
+    /* Color de fondo */
+    height: 100px;
+    /* Altura del pie de página */
+    display: flex;
+    /* Para alinear los elementos verticalmente */
+    justify-content: center;
+    /* Para centrar los elementos horizontalmente */
+    align-items: center;
+    /* Para centrar los elementos verticalmente */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    /* Para alinear los elementos verticalmente */
+    justify-content: space-between;
+    /* Para separar los elementos */
+}
+
+.footer-row {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 12px;   
+}
+
+.footer-row a {
+    font-family: 'Barlow', sans-serif;
+    /* Fuente */
+    font-weight: bold;
+    /* Estilo de fuente */
+    font-size: 20px;
+    /* Tamaño de fuente */
+    color: black;
+    /* Color del texto */
+    margin: 0 10px;
+    /* Espacio alrededor de los enlaces */
+    text-decoration: none;
+}
+
+.footer-row p {
+    font-family: 'Barlow', sans-serif;
+    /* Fuente */
+    font-weight: lighter;
+    /* Estilo de fuente */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    color: black;
+    /* Color del texto */
+}

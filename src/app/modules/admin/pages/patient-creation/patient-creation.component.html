@@ -1,0 +1,72 @@
+<div class="container">
+    <h1>Registrar un Nuevo Paciente</h1>
+    <p-scrollPanel [style]="{ width: '100%', height: '600px' }">
+        <form (ngSubmit)="createPatient()">
+            <div>
+                <label for="documentNumber">Número de documento</label>
+                <input type="number" id="documentNumber" placeholder="Número de documento"
+                    [(ngModel)]="patient.documentNumber" name="documentNumber">
+            </div>
+            <div>
+                <label for="documentType">Tipo de Documento</label>
+                <p-dropdown id="documentType" [options]="documentTypes" placeholder="Tipo de documento"
+                    [(ngModel)]="patient.documentType" name="documentType"></p-dropdown>
+            </div>
+            <div>
+                <label for="name1">Primer Nombre</label>
+                <input id="name1" placeholder="Primer Nombre" [(ngModel)]="patient.name1" name="name1">
+            </div>
+            <div>
+                <label for="name2">Segundo Nombre</label>
+                <input id="name2" placeholder="Segundo Nombre" [(ngModel)]="patient.name2" name="name2">
+            </div>
+            <div>
+                <label for="lastname1">Primer Apellido</label>
+                <input id="lastname1" placeholder="Primer Apellido" [(ngModel)]="patient.lastname1" name="lastname1">
+            </div>
+            <div>
+                <label for="lastname2">Segundo Apellido</label>
+                <input id="lastname2" placeholder="Segundo Apellido" [(ngModel)]="patient.lastname2" name="lastname2">
+            </div>
+            <div>
+                <label for="birthdate">Fecha de nacimiento</label>
+                <p-calendar id="birthdate" [(ngModel)]="patient.birthdate" name="birthdate"></p-calendar>
+            </div>
+            <div>
+                <label for="sex">Sexo</label>
+                <select id="sex" [(ngModel)]="patient.sex" name="sex">
+                    <option value="H">Hombre</option>
+                    <option value="M">Mujer</option>
+                </select>
+            </div>
+            <div>
+                <label for="gender">Género</label>
+                <p-radioButton id="gender" name="gender" value="Masculino" label="Masculino"
+                    [(ngModel)]="patient.gender"></p-radioButton>
+                <p-radioButton id="gender" name="gender" value="Femenino" label="Femenino"
+                    [(ngModel)]="patient.gender"></p-radioButton>
+                <p-radioButton id="gender" name="gender" value="Otro" label="Otro"
+                    [(ngModel)]="patient.gender"></p-radioButton>
+            </div>
+            <div>
+                <label for="address">Dirección</label>
+                <input id="address" placeholder="Dirección" [(ngModel)]="patient.address" name="address">
+            </div>
+            <div>
+                <label for="phoneNumber">Número de teléfono</label>
+                <input type="number"  id="phoneNumber" placeholder="Número de teléfono" [(ngModel)]="patient.phoneNumber"
+                    name="phoneNumber">
+            </div>
+            <div>
+                <label for="planTypeId">Tipo de plan</label>
+                <select id="planTypeId" [(ngModel)]="patient.planTypeId" name="planTypeId">
+                    <option value="4">Básico</option>
+                    <option value="1">Platino</option>
+                    <option value="2">Oro</option>
+                    <option value="3">Plata</option>
+                </select>
+            </div>
+            <p-button type="submit" label="Registrar"></p-button>
+        </form>
+    </p-scrollPanel>
+</div>
